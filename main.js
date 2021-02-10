@@ -39,7 +39,7 @@ const printRes = () => {
     for(let i = 0; i< responses.length;i++){
         const data = responses[i] || [0,0,0,0]
         const [confirmedSum,sentSum,reqCount,runningTime] = data
-        console.log(`${i+1}:${deadS} ${confirmedSum}/${sentSum} diff:${confirmedSum - sentSum} n sent: ${reqCount}  running:${Math.round(runningTime/1000)} seconds `)
+        console.log(`${i+1}: ${confirmedSum}/${sentSum} diff:${confirmedSum - sentSum} n sent: ${reqCount}  running:${Math.round(runningTime/1000)} seconds `)
     }
 }
 const RunSender = (index) => {
